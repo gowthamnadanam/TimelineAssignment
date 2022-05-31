@@ -22,13 +22,18 @@ export class TimelineService {
     private http: HttpClient,
     private messageService: MessageService) { }
 
-  getTimeline(): Observable<Grade[]> {
-    return this.http.get<Grade[]>(this.timelineUrl +'/grades')
-      .pipe(
-        tap(_ => this.log('fetched timeline')),
-        catchError(this.handleError<Grade[]>('getTimeline', []))
-      );
-  }
+  // getTimeline(): Observable<Grade[]> {
+  //   return this.http.get<Grade[]>(this.timelineUrl +'/grades')
+  //     .pipe(
+  //       tap(_ => this.log('fetched timeline')),
+  //       catchError(this.handleError<Grade[]>('getTimeline', []))
+  //     );
+  // }
+
+  public getTimeline(){ 
+    debugger;
+    return this.http.get(this.timelineUrl + '/grades');
+}
 
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {

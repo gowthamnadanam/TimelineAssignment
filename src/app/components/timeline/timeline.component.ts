@@ -29,7 +29,7 @@ export class TimelineComponent implements OnInit {
 
   getTimeline(): void {
     this.timelineService.getTimeline()
-      .subscribe((res : Array<Grade>)=>{
+      .subscribe((res : any)=>{
         this.grades = res;
     });
   }

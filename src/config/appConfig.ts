@@ -3,5 +3,5 @@ export const appConfig = {
     singleSlideOffset : true,
     noWrap : true,
     activeSlideIndex : 0,
-    rooturl: 'http://localhost:3000'
+    rooturl: 'http://localhost:4200/api'
 }
