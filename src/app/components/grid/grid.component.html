@@ -1,0 +1,18 @@
+<div class="tablePosition">
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Grade</th>
+				<th>Subject</th>
+				<th>Score</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr mdbTableCol *ngFor="let el of filteredArray">
+				<td>{{ el.grade }}</td>
+				<td>{{ el.subjectName }}</td>
+				<td>{{ el.score }}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

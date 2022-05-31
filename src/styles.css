@@ -1,0 +1,42 @@
+/* Global Styles */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.carousel-indicators{
+  top:70px !important;
+  height: 15px !important;
+}
+
+.carouselOuter{
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.carouselPosition{
+  margin-top: 0px;
+  padding: 20px;
+}
+
+.tablePosition{
+  padding-top: 200px;
+  width: auto;
+  text-align: center;
+}
+
+.carousel-control-prev-icon{
+  background-color: blue !important;
+  margin-top: 43% !important;
+}
+
+.carousel-control-next-icon{
+  background-color: blue !important;
+  margin-top: 43% !important;
+}
+
+.timelineStyle{
+  display: block; 
+  width: 95%;
+}
+

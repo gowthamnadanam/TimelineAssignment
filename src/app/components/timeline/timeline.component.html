@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.css" />
+<div class="carouselOuter">
+    <div class="carouselPosition">
+        <carousel #carousel [itemsPerSlide]="itemsPerSlide" [singleSlideOffset]="singleSlideOffset" [interval]="0"
+            [(activeSlide)]="activeSlideIndex" [noWrap]="noWrap" (click)="changedTimeline()">
+            <slide *ngFor="let slide of grades; let index=index">
+                <button class="timelineStyle">{{slide.subjectName}} {{slide.grade}}</button>
+            </slide>
+        </carousel>
+    </div>
+</div>
+<div>
+    <app-grid></app-grid>
+</div>
