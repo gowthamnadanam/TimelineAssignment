@@ -1,8 +1,46 @@
-# TimelineAssignment
+### Student Timeline Assignment
 
-Steps to run:
+A simple web application that visualizes the performance of a school student in a dynamic dashboard based on a configuration provided by the
+school administrator.
 
-Do YARN to install the dependencies and then YARN START to start the applications.
+
+### Requirement Implementation - Trace
+
+| Functional Requirement        | Implementation Trace
+| -------------------------     |:-------------
+| Creative Responsive site      | Partially achieved
+| dragabble timeline            | implemented by carousel      
+| scores from csv               | included as part of json  
+
+### Technology Stack
+
+| Framework                     | Version / Type
+| -------------------------     |:-------------
+| Angular                       | 13
+| Testing Library               | Jest      
+| Static code analysis          | typescript - eslint  
+
+### Steps to run the app:
+
+1. YARN to install the dependencies 
+2. YARN START to start the applications.
+
+### Steps to run code analysis
+> npm run lint
+
+### Decisions or Assumptions
+
+1. Draggable timeline component was replaced by carousel which achieves same functionality
+2. scores from csv file is replaced by giving the inputs in json file itself.
+
+### Areas for Improvement
+
+1. CSS could have been better
+2. Implementation of timeline requires more effort, can be achieved.
+3. Error handling is handled with just console.log
+4. Unit test cases can be written in depth.
+
+### Description
 
 Application will run in http:\\localhost:4200, for both frontend and backend.
 
